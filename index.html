@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>美味蟹堡</title>
+</head>
+<style>
+  /* 自訂 navbar 背景色 */
+  :root {
+    --bs-coffee-rgb: 60, 40, 0;
+  }
+
+  .bg-coffee {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-coffee-rgb), var(--bs-bg-opacity)) !important;
+  }
+
+  .carousel-inner {
+    height: 100vh;
+  }
+
+  .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark text-bg-dark fixed-top">
+    <div class="container-fluid">
+      <!-- logo -->
+      <div class="row">
+        <a class="navbar-brand col" href="#">蟹堡王</a>
+
+      </div>
+
+      <!-- 選單摺疊按鈕 -->
+      <div class="row">
+        <div class="col">
+          <!-- 漢堡按鈕 -->
+          <!-- 按鈕 id 對應選單 id -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <!-- 選單區 me-auto 是 margin-right-auto -->
+            <ul class="navbar-nav  my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" href="#section01">美味餐點</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#section01">周邊環境</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#section01">蟹堡位置</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#section01">聯絡我們</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#section01">美味蟹堡故事</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 輪播 -->
+  <div class="container-fluid p-0">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <img src="./img/TOP_BN_1.jpg" class="d-block w-100 mt-5">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/TOP_BN_3.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/TOP_BN_2.png" class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card-三張 -->
+  <div class="container m-auto mt-5 mb-5 p-0" id="card01">
+    <div class="row row-cols-1 row-cols-lg-3">
+      <div class="col col-sm-12 mb-3">
+        <div class="card">
+          <img src="./img/SEC_BN_1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">美味蟹堡</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm-12 mb-3">
+        <div class="card">
+          <img src="./img/SEC_BN_2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">美味蟹堡</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm-12 mb-3">
+        <div class="card">
+          <img src="./img/images.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">美味蟹堡</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card-滿版 -->
+  <div class="container-fluid p-0">
+    <div class="card mb-3 w-100 text-center border-0">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-6">
+          <img src="https://picsum.photos/600/400/?random=3" class="img-fluid w-100">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 align-items-center">
+        <div class="col-md-6 order-xs-1 order-md-2 ">
+          <img src="https://picsum.photos/600/400/?random=3" class="img-fluid w-100 align-items-sm-start">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body  order-xs-2 order-md-1 ">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Google Map -->
+  <div class="container-fluid p-0">
+    <div class="row">
+      <div class="col">
+        <div class="ratio ratio-21x9">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.2335588573656!2d13.716338314717879!3d44.93891977636094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5eb23b6acba3630c!2zNDTCsDU2JzIwLjEiTiAxM8KwNDMnMDYuNyJF!5e0!3m2!1szh-TW!2stw!4v1670861715028!5m2!1szh-TW!2stw"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 聯絡我們 -->
+  <div class="container p-0 text-center mt-5 mb-5">
+
+    <h1>聯絡我們</h1>
+    <h2>泰山咖啡莊園 傳承熱情</h2>
+    <h6>任何問題或建議歡迎傳表單給我們</h6>
+    <!-- list-Name phoneNumber -->
+    <form>
+      <div class="row m-1 text-start needs-validation" novalidate>
+        <div class="col-md-6">
+          <label for="validationCustom01" class="form-label small">姓名</label>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="validationCustom01" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="input-group-text">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                  value="option1">
+                <label class="form-check-label" for="inlineRadio1">男士</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                  value="option2">
+                <label class="form-check-label" for="inlineRadio2">女士</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label small">電話</label>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control" name="phoneNumber" id="validationCustom02" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-1 text-start">
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label small">電子信箱</label>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" name="email" id="validationCustom03" required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label small">問題類型</label>
+          <select class="form-select form-select" aria-label=".form-select-sm example">
+            <option selected><small>餐飲建議</small></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+      <div class="row m-1 text-start">
+        <div class="col-md-12">
+          <label class="form-label small">意見需求</label>
+          <div class="input-group mb-3">
+            <textarea class="form-control" style="height:150px"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row m-1 text-start">
+        <div class="col-md-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label small" for="flexCheckDefault">
+              訂閱美味蟹堡最新優惠
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-light" type="submit">送出</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class="container-fluid p-0">
+    <div class="row p-3">
+      <div class="col-lg-3 text-center col-6">
+        <img src="./img/the_krusty_krab_viacom.0.jpg" alt="蟹堡王"
+          style="width:200px;height:200px;object-fit: cover;border-radius: 50%;">
+      </div>
+      <div class="col-lg-3 col-6">
+        <ul class="list-group list-group-flush ">
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
